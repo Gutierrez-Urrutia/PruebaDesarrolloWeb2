@@ -26,3 +26,12 @@
 .selector2{
     font-size: 13px;
 }
+
+.superman-icon {
+    position: fixed;
+    right: 20px;
+    top: 84%;
+    transform: translateY(-50%);
+    width: 50px;
+    cursor: pointer;
+}
