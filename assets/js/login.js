@@ -18,7 +18,14 @@ function obtenerDatos() {
         console.log(usuario.pass);
 
         alert(`¡Bienvenido ${usuario.user}!`)
+    };
+};
+
+window.addEventListener('scroll', function () {
+    const supermanIcon = document.getElementById('scroll-top-icon');
+    if (window.scrollY > 30) {
+        supermanIcon.style.display = 'block';
+    } else {
+        supermanIcon.style.display = 'none';
     }
-
-
-}
+});

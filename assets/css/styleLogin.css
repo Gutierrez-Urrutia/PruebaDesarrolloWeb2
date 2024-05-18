@@ -37,3 +37,19 @@
     width: 50px;
     cursor: pointer;
 }
+
+@media (max-width: 576px) {
+    .navbar .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .navbar .btn-secondary {
+        width: 100%;
+    }
+
+    .navbar .d-flex {
+        flex-direction: column;
+        width: 100%;
+    }
+}

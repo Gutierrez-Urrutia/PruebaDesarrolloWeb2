@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body id="superman-scroll">
@@ -66,7 +67,7 @@
             </div>
             <div class="carousel-item" data-bs-interval="4000">
                 <img src="./assets/img/Banner3.jpg" class="d-block w-100 carrusel" alt="...">
-                <p class="texto2">Ingresa el codigo <span class="codigo">COMICSTORE1</span> y obtén un 10% de descuento en tu primera compra!</p>
+                <p class="texto2">Ingresa el código<span class="codigo">COMICSTORE1</span> y obtén un 10% de descuento en tu primera compra!</p>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -79,170 +80,9 @@
         </button>
     </div>
     <div id="galeria" class="galeria container-fluid py-5 text-center">
-        <div class="row">
-            <p class="titulo">¡Recién llegados!</p>
+        <p class="titulo">¡Recién llegados!</p>
+        <div id="comics" class="row">
             
-            <!-- Card 1 -->
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/clean (3).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Ms. Marvel Mutant Menace</h5>
-                      <p class="card-text">$12000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/clean (1).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Giant Size Hulk</h5>
-                      <p class="card-text">$10000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/nueva.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Venom: Separation Anxiety</h5>
-                      <p class="card-text">$666</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 4 -->
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/nueva4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Daredevil</h5>
-                      <p class="card-text">$15000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/clean (4).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">X-MEN '97</h5>
-                      <p class="card-text">$11000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 6 -->
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/clean (5).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Fantastic Four: The Perfect Storm</h5>
-                      <p class="card-text">$13000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 7 -->
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/clean (6).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Deadpool: Kills The Marvel Universe</h5>
-                      <p class="card-text">$50000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 8 -->
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/nueva3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Carnage</h5>
-                      <p class="card-text">$30000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 9 -->
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/clean (9).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Dead X-MEN 002</h5>
-                      <p class="card-text">$40000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 10 -->
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/clean.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Thor</h5>
-                      <p class="card-text">$10000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 11 -->
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/detail.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Ghost Rider</h5>
-                      <p class="card-text">$14000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 12 -->
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <img src="./assets/img/clean (8).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Dead X-MEN 004</h5>
-                      <p class="card-text">$12000</p>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            
-
-
-             
-
 
         </div>
 
@@ -251,7 +91,7 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-12">
-                    <a class="nav-link" href="#superman-scroll"><img src="./assets/img/superman.png" alt="Superman" class="superman-icon"></a>
+                    <a class="nav-link" href="#superman-scroll"><img src="./assets/img/superman.png" alt="Superman" class="superman-icon" id="scroll-top-icon"></a>
             </div>
         </div>
     </div>
@@ -269,14 +109,64 @@
             </a>
         </div>
     </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            getComics();
+        });
+        async function getComics(){
+            const publicKey ='96a3834334b5035f61b7ab28551e9e93';
+            const privateKey = '24200ee263c222c28fc65e88fc43d0d5c13502fd';
+            const timeStamp = new Date().getTime();
+            const hash =    CryptoJS.MD5(timeStamp + privateKey + publicKey);
+            const apiUrl = 'https://gateway.marvel.com/v1/public/comics';
+            const url = `${apiUrl}?ts=${timeStamp}&apikey=${publicKey}&hash=${hash}`;
+            try{
+                //Se ejecuta cuando todo anda bien
+                const comics = await fetch(url);
+                const comicsJson = await comics.json();
+                console.log(comicsJson.data.results);
+                
 
+                const divComics = document.getElementById('comics');
+                const arrayComics = [];
+                comicsJson.data.results.forEach(comic => {
+                    
+                if(comic.id != 82967 && comic.id != 82965 && comic.id != 1590 && comic.id != 183 && comic.id != 2088 && comic.id != 1749 && comic.id !=1158 && comic.id != 1689 && comic.id != 1220 && comic.id != 1308 && comic.id !=1994 && comic.id != 1332){
+                        
+                        divComics.innerHTML += ` <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
+                                                <div class="card">
+                                                    <img src="${comic.thumbnail.path}.${comic.thumbnail.extension}" class="card-img-top" alt="..." style="max-height: 624.88px;">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">${comic.title}</h5>
+                                                        <p class="card-text">$12000</p>
+                                                    </div>
+                                                    <div class="d-grid">
+                                                        <button class="btn btn-dark btn-block" onclick="location.href='./vistaProducto.html'">Comprar</button>
+                                                    </div>
+                                                </div>
+                                            </div>`
+                    
+                    };
+                    
+                });
+            
+            }
+            catch (error){
+                //Se ejecuta cuando hay un error
+                console.log(error);
+            };
+        }; 
+    </script>
     <!-- Bootswatch Script Js and Popper -->
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
